@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jyoi Alankar Jwellers</title>
+    <link rel="stylesheet" href="about_style.css">
+    <link rel="stylesheet" href="proucts_style.css">
+    <link rel="stylesheet" href="product.js">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,100;1,200&display=swap" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div class="header">
+
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="/images/Shop_Logo-3.0.png" width="125 px">
+                </div>
+                
+                <nav>
+                    <ul id="MenuItem">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" alt="" width="30px" height="30px">
+                <img src="/images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Jyoti AlankarJwellers </h1>
+                    <h2>Give Your Glow  <br>A New Style!</h2>
+                    <br>
+                    <!-- <p>A PRECIOUUS AND QUALITY HOLMARK JWELLERY SHOP <br>Modern Gold and Silver Jwellery collection </p> -->
+                    <a href="" class="btn">About US</a>
+                </div>
+                <div class="col-2">
+                    <img src="/images/set-3.jpg" alt="">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="product_contaier">
+        <div class="p-row">
+            <div class="pcol-1" id="mainImage">
+                <img src="/images/Set-1.jpg" alt="">
+                <div class="pcol-1s" id="thumbnailContainer">
+                    <div class="pcol-s">
+                        <img src="/images/Set-1.jpg" alt="">
+                    </div>
+                    <div class="pcol-s">
+                        <img src="/images/Set-2.jpg" alt="">
+                    </div>
+                    <div class="pcol-s">
+                        <img src="/images/set-3.jpg" alt="">
+                    </div>
+                    <div class="pcol-s">
+                        <img src="/images/set-4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+           
+            <div class="pcol-2">
+                <div class="p-details">
+                    <h1>22k Kalka Designed Sankha Bangle</h1>
+                    <h4>Product Code: 22KDIJEM22</h4>
+                    <br>
+                    <p>Offer Price <span>(-5%)</span> : ₹40,439</p>
+                    <br>
+                    <p>M.R.P.: ₹42,568</p>
+                    <br>
+                    <p>Weight: 7.50g</p>
+                    <p>Carret: 22K </p>
+                    <div class="btn">
+                        Buy Now
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+ 
+    <!-- -----------------------footer---------------------------------------------------------------------- -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="/images/Shop_Logo-3.0.png" alt="">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benfits of Precious Jwellery Accessible to the many. </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Usefull Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>X (Twitter)</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                        <li>Pintrest</li>
+                        <li><a href="https://www.studyweb.rf.gd/home" class="study-web">Study Web Foundation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright 2024 &#169 - JYOTI ALANKAR JWELLERS </p>
+        </div>
+    </div>
+
+
+    <script>
+        // Get reference to the main image element and thumbnail container
+        const mainImage = document.getElementById('mainImage').querySelector('img');
+        const thumbnails = document.getElementById('thumbnailContainer').querySelectorAll('.pcol-s');
+    
+        // Add click event listeners to each thumbnail
+        thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener('click', () => {
+                // Set the src of the main image to the src of the clicked thumbnail
+                const thumbnailImage = thumbnail.querySelector('img');
+                mainImage.src = thumbnailImage.src;
+            });
+        });
+    </script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,427 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+
+}
+
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 20px;
+    text-shadow: #082f41;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: #555;
+    transition: background 0.5s;
+}
+
+a:hover{
+    background: aqua;
+    border-radius: 5px;
+}
+
+p{
+    color: #555;
+}
+
+.container{
+    max-width: 80%;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+
+/* --------------------------------- */
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.col-2{
+    min-width: 300px;
+    /* align-items: center; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5%;
+   
+}
+
+.col-2 img{
+    width: 300px;
+    padding: 10px;
+    max-height: 300px;
+    border-radius: 8%;
+    align-items: center;
+    
+    
+}
+
+/* ------------------ */
+@keyframes slideInFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .col-2 img {
+    opacity: 0; /* Initially hide the image */
+    animation: slideInFromRight 2s ease-in-out forwards; /* Apply the animation */
+  }
+
+/* ------------------ */
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+/* ------------------ */
+.col-2 h1, .col-2 h2, .col-2 p, .col-2 .btn{
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideInFromRight 1s ease forwards;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+
+
+
+.btn{
+    display: inline-block;
+    background:#ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #563434;
+    border-radius: 30px;
+}
+.header{
+    background: radial-gradient(#fff,#03cea2);
+}
+
+/* .header .row{
+    margin-top: 70px;
+} */
+
+
+video{
+    display: block;
+    width: 300px;
+    padding: 10px;
+    max-height: 300px;
+    border-radius: 8%;
+    align-items: center;
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+
+.about h2{
+    /* margin-top: 30px; */
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 0px;
+    padding-top: 70px;
+    color: red;
+    
+}
+
+.about span{
+    color: black;
+}
+
+.about .details{
+    /* margin-top: 30px; */
+    margin-bottom: 30px;
+    align-items: center;
+    /* text-align: center; */
+    padding: 5%;
+}
+
+.details p{
+    font-weight: 900;
+    font-style: oblique;
+    color: #082f41;
+
+}
+
+
+/* ---------------------------------------------------------------------------------------- */
+
+.categories{
+    /* margin: 70px 70px; */
+    padding: 5%;
+    background: radial-gradient(#fff,#edf399);
+   
+}
+
+.col-3{
+    flex-basis: 25%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img{
+    width: 100%;
+    height: 350px;
+}
+
+/* ----------------------- */
+@keyframes slideInFromRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .col-3 img {
+    opacity: 0; /* Initially hide the image */
+    animation: slideInFromRight 2s ease-in-out forwards; /* Apply the animation */
+  }
+
+  /* ---------------------------------------------------------------------------------------- */
+
+  /* .section-3{
+
+    display: flex;
+    width: 100%;
+  
+    
+
+  } */
+  .section-3 .row-1{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 450px;
+    
+  }
+
+  .section-3 .col-logo{
+    width: 40%;
+    margin-right: 20px;
+    align-items: center;
+    
+  }
+
+  .col-logo img{
+    margin-right: 20px;
+    align-items: center;
+  }
+
+  .section-3 .col-details{
+   margin-top: 90px;
+    padding: 3%;
+    /* margin-left: 50px; */
+    align-items: center;
+    /* text-align: center; */
+    justify-content: center;
+    
+  }
+
+
+/* ----------------------Footer--------------------------------------------------------------------------------------- */
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p{
+    color: #8a8a8a;
+}
+
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.app-logo{
+    margin-top: 20px;
+
+}
+
+.app-logo img{
+    width: 140px;
+}
+
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.Copyright{
+    text-align: center;
+}
+
+.footer-col-4  a{
+    color: aqua;
+    
+}
+
+
+
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/* --------------------Media query for-menu------------------- */
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 1s;
+        background: rgb(248, 154, 14);
+    }
+
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    
+    }
+
+    nav ul li a{
+        color: #082f41;
+    }
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+}
+/* --------------------Media query for less then 600 scree size------------------- */
+
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+}
+
+
+
+  

@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.product_contaier{
+
+    padding: 0;
+    margin-bottom: 10px;
+    display: flex;
+    background: radial-gradient(#fff, #f0eea7);
+    height: 1000px;
+    width: 100%;
+    
+    
+}
+
+.p-row{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-evenly;
+
+    flex: 1;
+    padding: 5%;
+    color: #045039;
+    height: 800px;
+    width: 90%;
+
+}
+
+.pcol-1 img{
+    height: 500px;
+    width: 700px;
+    border-radius: 5%;
+    box-shadow: 1px 1px 20px #e6e219f7, 1px 1px 40px #f7e820f7;
+}
+
+
+.pcol-1 img:hover{
+    transition: background 1s, transform 1s;
+    transform: translateY(-15px); 
+    border: #082f41; 
+    box-shadow: 1px 1px 20px #082f41, 1px 1px 40px #082f41;
+    cursor: pointer;
+}
+
+.pcol-1, .pcol-s {
+        cursor: pointer;
+    }
+.pcol-1 .pcol-1s{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
+    padding: 5%;
+    /* height: 50px;
+    width: 100%; */
+
+}
+
+.pcol-1s img{
+    height: 150px;
+    width: 150px;
+    border-radius: 5%;
+    box-shadow: 1px 1px 20px #e6e219f7, 1px 1px 40px #f7e820f7;
+}
+.p-row .p-details{
+   
+    margin-left: 100px;
+    /* text-align: center; */
+    color: rgb(4, 103, 116);
+}
+
+.p-details h1{
+    color:  rgb(4, 103, 116);
+    font-size: 40px;
+    font-weight: 600;
+
+}
+
+.p-details h4{
+    color: rgb(4, 103, 116);
+    /* font-size: 30px; */
+    font-weight: 600;
+
+}
+.p-details p{
+    color:  rgb(4, 103, 116);
+    font-size: 20px;
+    font-weight: 600
+}
+
+.p-details p span{
+    color: #d10505;
+    font-size: 20px;
+    font-weight: 600
+}
+
+.pcol-2 .p-details{
+    margin-top: 200px;
+}
+
+
+.btn{
+    display: inline-block;
+    background:#ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background: #f7cb3b;
+    border-radius: 30px;
+    box-shadow: 1px 1px 20px #082f41, 1px 1px 40px #082f41, 1px 1px 40px #082f41;
+    color: #d10505;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/* ----------------------Footer-------------------- */
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p{
+    color: #8a8a8a;
+}
+
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+
+.footer-col-2 img {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.app-logo{
+    margin-top: 20px;
+
+}
+
+.app-logo img{
+    width: 140px;
+}
+
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+
+.Copyright{
+    text-align: center;
+}
+
+.footer-col-4  a{
+    color: aqua;
+    
+}
+
+
+
+
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/* --------------------Media query for-menu------------------- */
+
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 1s;
+        background: rgb(248, 154, 14);
+    }
+
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    
+    }
+
+    nav ul li a{
+        color: #082f41;
+    }
+
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+}
+/* --------------------Media query for less then 600 scree size------------------- */
+
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+}
+
